@@ -108,19 +108,33 @@ def add_baselines(
         kind="mergesort",
     ).reset_index(drop=True)
 
-    # BASELINE 1: OWN HISTORY
+        # BASELINE 1: OWN HISTORY
     #
-    # Shift by one week first, so the current week's cost is excluded.
-    # Then average up to the previous eight available weekly values.
-    data["own_history_baseline"] = (
-        data.groupby("route", sort=False)["cost_per_tonne_km"]
-        .transform(
-            lambda route_costs: route_costs.shift(1).rolling(
-                window=history_window_weeks,
-                min_periods=1,
-            ).mean()
-        )
-    )
+    # Use the eight calendar weeks before the current week.
+    # Include only actual observed weekly costs, exclude the current
+    # week, and do not manufacture values for missing weeks.
+
+    data["own_history_baseline"] = np.nan
+
+    for route_indices in data.groupby("route", sort=False).groups.values():
+        route_data = data.loc[route_indices]
+
+        for row_index, row in route_data.iterrows():
+            current_week = row["week_of"]
+            history_start = current_week - pd.Timedelta(
+                weeks=history_window_weeks
+            )
+
+            prior_costs = route_data.loc[
+                (route_data["week_of"] >= history_start)
+                & (route_data["week_of"] < current_week),
+                "cost_per_tonne_km",
+            ]
+
+            if not prior_costs.empty:
+                data.at[row_index, "own_history_baseline"] = (
+                    prior_costs.mean()
+                )
 
     # BASELINE 2: SIMILAR ROUTES
     #
