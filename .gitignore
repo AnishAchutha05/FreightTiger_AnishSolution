@@ -1,1 +1,48 @@
-.venv
+
+## 2. `.gitignore`
+
+Open `.gitignore` and replace its contents with:
+
+```gitignore
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local environment configuration
+.env
+.env.*
+!.env.example
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test, type-check and lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Generated local vector database (rebuilds from supplied notes)
+data/chroma_db/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

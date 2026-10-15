@@ -106,8 +106,8 @@ def write_token_log(run_stats: dict) -> None:
     output_tokens = int(run_stats.get("output_tokens", 0))
 
     # Published OpenAI gpt-6-luna standard rates, USD per million tokens.
-    input_rate = 0.10
-    output_rate = 0.50
+    input_rate = 0.05
+    output_rate = 0.25
 
     hosted_estimate = (
         input_tokens * input_rate + output_tokens * output_rate
