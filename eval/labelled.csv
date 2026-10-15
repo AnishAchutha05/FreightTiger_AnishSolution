@@ -1,0 +1,31 @@
+case_id,route,week_of,expected_candidate,expected_verdict,expected_note_id,label_rationale
+E01,Delhi-Jaipur,2024-11-11,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."
+E02,Ahmedabad-Mumbai,2025-01-20,True,No (justified),N002,"N002 was manually checked for route, verification window and positive cost-increase evidence."
+E03,Mumbai-Pune,2025-09-15,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."
+E04,Chennai-Bangalore,2025-02-24,True,No (justified),N001,"N001 was manually checked for route, verification window and positive cost-increase evidence."
+E05,Chennai-Bangalore,2025-03-03,True,No (justified),N001,"N001 was manually checked for route, verification window and positive cost-increase evidence."
+E06,Chennai-Bangalore,2025-03-10,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."
+E07,Chennai-Bangalore,2025-03-17,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."
+E08,Chennai-Bangalore,2025-03-24,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E09,Delhi-Jaipur,2025-05-05,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E10,Delhi-Jaipur,2025-05-12,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E11,Delhi-Jaipur,2024-03-11,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E12,Mumbai-Delhi,2024-07-29,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E13,Mumbai-Pune,2025-09-22,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."
+E14,Delhi-Jaipur,2024-05-20,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E15,Kolkata-Bhubaneswar,2025-06-09,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E16,Mumbai-Pune,2025-10-27,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."
+E17,Ahmedabad-Mumbai,2024-01-01,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E18,Chennai-Bangalore,2024-01-01,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E19,Delhi-Chennai,2024-01-01,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E20,Delhi-Jaipur,2024-01-01,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E21,Kolkata-Bhubaneswar,2024-01-01,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E22,Mumbai-Delhi,2024-01-01,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E23,Mumbai-Pune,2024-01-01,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E24,Mumbai-Pune,2024-10-28,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."
+E25,Mumbai-Pune,2024-12-16,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."
+E26,Mumbai-Pune,2025-08-18,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."
+E27,Mumbai-Pune,2025-01-20,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E28,Mumbai-Pune,2025-09-08,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E29,Mumbai-Pune,2024-04-29,False,Not flagged,,Does not meet the documented numerical candidate rule.
+E30,Mumbai-Pune,2025-01-13,True,Yes,,"Meets the numerical rule, but no supplied note passes all route, date-window and cost-effect checks."

@@ -1,0 +1,18 @@
+{
+  "generated_at_utc": "2026-10-14T20:03:10.856607+00:00",
+  "local_model": "qwen2.5:7b",
+  "runtime": "Ollama",
+  "llm_calls": 3,
+  "input_tokens": 407,
+  "output_tokens": 131,
+  "direct_local_api_cost_usd": 0,
+  "hosted_comparison": {
+    "model": "OpenAI gpt-6-luna",
+    "input_usd_per_million_tokens": 0.05,
+    "output_usd_per_million_tokens": 0.25,
+    "estimated_cost_usd": 5.31e-05,
+    "price_checked": "2026-10-15",
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "note": "Rough comparison only. Tokenizers, model quality and hardware costs differ; this is not an actual hosted bill."
+  }
+}

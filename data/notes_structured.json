@@ -1,0 +1,156 @@
+
+{
+  "schema_version": 2,
+  "notes": [
+    {
+      "note_id": "N001",
+      "note_date": "2025-02-24",
+      "applies_to_routes": ["Chennai-Bangalore"],
+      "event_start_date": "2025-02-24",
+      "event_end_date": "2025-03-08",
+      "verification_window": {
+        "start_date": "2025-02-24",
+        "end_date": "2025-03-08",
+        "basis": "explicit_event_window"
+      },
+      "effect": "positive_cost_increase",
+      "exclude_from_dataset": false,
+      "rationale": "The note explicitly describes flooding, detours and higher trip costs from February 24 through March 8, 2025. The week beginning March 10 is outside this window."
+    },
+    {
+      "note_id": "N002",
+      "note_date": "2025-01-20",
+      "applies_to_routes": ["Ahmedabad-Mumbai"],
+      "event_start_date": null,
+      "event_end_date": null,
+      "verification_window": {
+        "start_date": "2025-01-20",
+        "end_date": "2025-01-26",
+        "basis": "inferred_festival_week"
+      },
+      "effect": "positive_cost_increase",
+      "exclude_from_dataset": false,
+      "rationale": "The note describes a temporary festival surcharge on Ahmedabad-Mumbai. The January 20-26 verification window is inferred; the source does not explicitly state exact event start and end dates."
+    },
+    {
+      "note_id": "N003",
+      "note_date": "2025-05-05",
+      "applies_to_routes": ["ALL_ROUTES"],
+      "event_start_date": "2025-05-05",
+      "event_end_date": null,
+      "verification_window": {
+        "start_date": "2025-05-05",
+        "end_date": "2025-05-11",
+        "basis": "conservative_one_week_default"
+      },
+      "effect": "positive_cost_increase",
+      "exclude_from_dataset": false,
+      "rationale": "The note describes a nationwide diesel-price increase starting the week of May 5, with costs rising roughly 5-7%. The source gives no end date. For verification, we conservatively accept this note only for the week beginning May 5 unless stronger evidence supports a wider period."
+    },
+    {
+      "note_id": "N004",
+      "note_date": "2024-03-11",
+      "applies_to_routes": ["ALL_ROUTES"],
+      "event_start_date": null,
+      "event_end_date": null,
+      "verification_window": {
+        "start_date": "2024-03-11",
+        "end_date": "2024-03-11",
+        "basis": "note_date_only"
+      },
+      "effect": "not_applicable_to_dataset",
+      "exclude_from_dataset": true,
+      "rationale": "The note explicitly states that the affected routes are not included in this dataset. Reject it for every supplied route, despite the All Routes applicability label."
+    },
+    {
+      "note_id": "N005",
+      "note_date": "2024-07-29",
+      "applies_to_routes": ["Mumbai-Delhi"],
+      "event_start_date": null,
+      "event_end_date": null,
+      "verification_window": {
+        "start_date": "2024-07-29",
+        "end_date": "2024-08-04",
+        "basis": "inferred_about_one_week"
+      },
+      "effect": "no_significant_cost_effect",
+      "exclude_from_dataset": false,
+      "rationale": "The note describes minor highway-maintenance delays for about one week but explicitly says costs were not significantly affected. The verification window is inferred and this note cannot justify a cost increase."
+    },
+    {
+      "note_id": "N006",
+      "note_date": "2025-09-22",
+      "applies_to_routes": ["ALL_ROUTES"],
+      "event_start_date": null,
+      "event_end_date": null,
+      "verification_window": {
+        "start_date": "2025-09-22",
+        "end_date": "2025-09-30",
+        "basis": "conservative_report_window"
+      },
+      "effect": "stable_conditions_no_increase_evidence",
+      "exclude_from_dataset": false,
+      "rationale": "The note reports stable freight demand and no major disruptions. The verification window begins on the report date as a conservative assumption. This note cannot justify a cost increase and must not be applied to the Mumbai-Pune anomaly in the week beginning September 15."
+    },
+    {
+      "note_id": "N007",
+      "note_date": "2024-05-20",
+      "applies_to_routes": ["Delhi-Jaipur"],
+      "event_start_date": null,
+      "event_end_date": null,
+      "verification_window": {
+        "start_date": "2024-05-20",
+        "end_date": "2024-05-20",
+        "basis": "note_date_only"
+      },
+      "effect": "improvement_no_quantified_cost_effect",
+      "exclude_from_dataset": false,
+      "rationale": "The note describes road improvements after resurfacing but does not quantify their effect on freight costs. It cannot justify a positive cost increase."
+    },
+    {
+      "note_id": "N008",
+      "note_date": "2025-06-09",
+      "applies_to_routes": ["Kolkata-Bhubaneswar"],
+      "event_start_date": null,
+      "event_end_date": null,
+      "verification_window": {
+        "start_date": "2025-06-09",
+        "end_date": "2025-06-15",
+        "basis": "conservative_note_week"
+      },
+      "effect": "normal_operations_no_increase_evidence",
+      "exclude_from_dataset": false,
+      "rationale": "The note reports normal operations and no significant disruptions. We conservatively limit its verification window to the week containing the note date. It cannot justify an increase."
+    },
+    {
+      "note_id": "N009",
+      "note_date": "2025-03-17",
+      "applies_to_routes": ["Chennai-Bangalore"],
+      "event_start_date": null,
+      "event_end_date": null,
+      "verification_window": {
+        "start_date": "2025-03-17",
+        "end_date": "2025-03-23",
+        "basis": "conservative_note_week"
+      },
+      "effect": "recovery_no_increase_evidence",
+      "exclude_from_dataset": false,
+      "rationale": "The note confirms that normal route conditions returned after flood-related repairs. The one-week verification window is a conservative assumption. Recovery does not justify a new cost increase."
+    },
+    {
+      "note_id": "N010",
+      "note_date": "2025-10-27",
+      "applies_to_routes": ["ALL_ROUTES"],
+      "event_start_date": "2025-10-27",
+      "event_end_date": null,
+      "verification_window": {
+        "start_date": "2025-10-27",
+        "end_date": "2025-11-02",
+        "basis": "conservative_one_week_default"
+      },
+      "effect": "cost_absorbed_no_rate_change",
+      "exclude_from_dataset": false,
+      "rationale": "The note says vehicle-tracking compliance costs were absorbed by transporters without a rate change. The one-week verification window is a conservative assumption. This note cannot justify an increase."
+    }
+  ]
+}
